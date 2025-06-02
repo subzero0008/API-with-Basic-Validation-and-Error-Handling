@@ -29,7 +29,8 @@ A RESTful API for item management built with TypeScript and Express, featuring f
 2. Install dependencies: npm install
 3. Development Mode (with auto-reload) npm run dev;
 4. Production Build npm run build;
-5. API Endpoints:
+## Testing
+ API Endpoints:
    Method	Endpoint	Description
 GET	/items	Get all items
 POST	/items	Create new item
