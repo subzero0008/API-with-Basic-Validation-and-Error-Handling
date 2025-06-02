@@ -29,8 +29,7 @@ A RESTful API for item management built with TypeScript and Express, featuring f
 2. Install dependencies: npm install
 3. Development Mode (with auto-reload) npm run dev;
 4. Production Build npm run build;
-## Testing
- API Endpoints:
+## API Endpoints:
    Method	Endpoint	Description
 GET	/items	Get all items
 POST	/items	Create new item
@@ -62,3 +61,12 @@ Error Responses:
 404 Not Found - Item not found
 
 500 Internal Server Error - Server-side issues
+## Testing in CMD
+ GET all items curl -i http://localhost:3000/items
+POST new item curl -i -X POST -H "Content-Type: application/json" -d "{\"name\":\"Test Item\"}" http://localhost:3000/items
+GET specific item (replace {id}) curl -i http://localhost:3000/items/e7edc5b4-fada-4540-909e-e51bf9a8e20f
+ PUT update item (replace {id}) curl -i -X PUT -H "Content-Type: application/json" -d "{\"name\":\"Updated Item\"}" http://localhost:3000/items/e7edc5b4-fada-4540-909e-e51bf9a8e20f
+ DELETE item (replace {id}) curl -i -X DELETE http://localhost:3000/items/e7edc5b4-fada-4540-909e-e51bf9a8e20f
+ 
+
+
